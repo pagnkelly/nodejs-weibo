@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title%> - Mircroblog</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+
+    <style type="text/css">
+        body{
+            padding-bottom:40px;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a href="" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="" class="brand">Microblog</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="/login">登陆</a>
+                    </li>
+                    <li>
+                        <a href="/reg">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="container" class="container">
+    <form class="form-horizontal" method="post">
+        <fieldset>
+            <legend>用户注册</legend>
+            <div class="control-ground">
+                <label for="username" class="control-label">用户名</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="username" name="username">
+                    <p class="help-block">您的账户名称，用于登陆和显示</p>
+                </div>
+            </div>
+            <div class="contral-group">
+                <lable class="control-label" for="password">口令</lable>
+                <div class="controls">
+                    <input type="password" class="input-xlarge" id="password" name="password">
+                </div>
+            </div>
+            <br/>
+            <div class="contral-group">
+                <lable class="control-label" for="password-repeat">重复输入口令</lable>
+                <div class="controls">
+                    <input type="password" class="input-xlarge" id="password-repeat" name="password-repeat">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">注册</button>
+            </div>
+        </fieldset>
+    </form>
+    <hr/>
+    <footer>
+        <p>
+            <a href="">byoid</a>2012
+        </p>
+    </footer>
+</div>
+</body>
+<script src="/javascripts/jquery-1.9.1.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+</html>

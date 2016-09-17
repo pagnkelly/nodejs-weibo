@@ -8,6 +8,9 @@
 
 module.exports = function(app){
   app.get('/',function(req,res){
-      res.render('index',{title:'haha'})
+      res.render('index',{title:'Express'})
   });
+    app.get('/reg',function(req,res){
+        res.render('reg',{title:'用户注册'})
+    });
 };
